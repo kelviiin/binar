@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challange 3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+</head>
+  <body >
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark row" style="padding: 35px 75px 35px 75px;">
+      <div class="nav justify-content-start container">
+        <a class="navbar-brand mb-0 col-md-1" style="font-size: 30px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="#">LOGO</a>
+        <li class="nav-item">
+          <a class="nav-link menu" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu" href="#">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link menu" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu" href="#">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu" href="#">Login</a>
+        </li>
+      </div>
+    </nav>
+    <div class="flex-container">
+      <div class="bg-image d-flex justify-content-center align-items-center" id="home" style="background-image: url('assets/main-bg.jpg');">
+        <div class="content text-center">
+          <h1 class="text-title">PLAY TRADITIONAL GAME</h1><br><br>
+          <p style="font-size: 3vh;color:white;">Experience new traditional game</p><br><br>
+          <button type="button" class="btn btn-warning btn-lg ply-now">PLAY NOW</button>
+        </div>
+        <div style="position:absolute;bottom: 0;">
+          <p style="color: white;font-size: 1vh;font-weight: bold;">THE STORY</p>
+          <!-- icon arrow down -->
+        </div>
+      </div>
+      <div class="bg-image d-flex align-items-center row" id="game" style="background-image: url('assets/the-games-bg.jpg');">
+        <div class="content text-start col" style="padding-left: 10vh;">
+          <p style="color: white;font-size: 24px;">What's so special</p>
+          <h1 class="text-title">THE GAMES</h1>
+        </div>
+        <div class="col">
+          <!-- <div class="row"> -->
+            <div id="carouselExampleIndicators" class="carousel slide col" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev col" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next col" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="bg-image  flex-item" id="feature" style="background-image: url('assets/features.jpg');">
+        <div class="d-flex justify-content-center align-items-center row">
+          <div class="col">
+
+          </div>
+          <div class="content text-start col" style="padding-top: 20vh;">
+            <p style="color: white;font-size: 24px;">What's so special?</p>
+            <h1 class="text-title">FEATURES</h1><br>
+            <ul>
+              <li>
+                <div class="timeline-area justify-content-center align-items-center">
+                  <h3 style="color: yellow;display: inline-block;margin-top: -14px;">TRADITIONAL GAMES</h3>
+                  <p style="font-size: 25px;color: white;">If you miss your childhood, we provide many traditional games here</p>
+                </div>
+              </li>
+              <li>
+                <div style="padding-left: 20px;">
+                  <h3 style="color: yellow;display: inline-block;margin-top: -16px;">GAME SUIT</h3>
+                </div>
+              </li>
+              <li style="padding-top: 40px;">
+                <div style="padding-left: 20px;">
+                  <h3 style="color: yellow;display: inline-block;margin-top: -16px;">TBD</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-image flex-item" id="req" style="background-image: url('assets/requirements.png');">
+        <div class="content text-start row">
+          
+          <p class="run text-center">Can my computer run this game?</p>
+          <div class="col-6 container" style="padding: 10%;">
+            <h1 class="text-title">SYSTEM REQUIRMENT</h1><br><br>
+            <div class="row">
+              <div class="col border">
+                <h3 style="color: rgb(255, 221, 0);margin: 0;padding-top: 15px;">OS:</h3><br>
+                <p style="color: #ccc;font-size: 20px;">Windows 7 64-bit only<br>(No OSX support at this time)</p>
+              </div>
+              <div class="col border">
+                <h3 style="color: rgb(255, 221, 0);margin: 0;padding-top: 15px;">PROCESSOR:</h3><br>
+                <p style="color: #ccc;font-size: 20px;">Intel core 2 Duo @2.4 GHZ or<br>AMD athlon X2 @ 2.8 GHZ</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col border">
+                <h3 style="color: rgb(255, 221, 0);margin: 0;padding-top: 15px;">Memory:</h3><br>
+                <p style="color: #ccc;font-size: 20px;">4GB RAM</p><br>
+              </div>
+              <div class="col border">
+                <h3 style="color: rgb(255, 221, 0);margin: 0;padding-top: 15px;">Storage:</h3><br>
+                <p style="color: #ccc;font-size: 20px;">8 GB available space</p><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col border">
+                <h3 style="color: rgb(255, 221, 0);margin: 0;padding-top: 15px;">GRAPHICS:</h3><br>
+                <p style="color: #ccc;font-size: 20px;">nVidia GeForce GTX 660 2GB or<br>AMD Radeon HD 7850 2GB DirectX11 (Shader Model)</p><br>
+              </div>
+            </div>
+            <!-- <p style="font-size: 24px;color: white;">Can my computer run this game</p> -->
+          </div>
+          <div class="col-6">
+          </div>
+        </div>
+      </div>
+      <div class="bg-image flex-item align-items-center justify-content-center" id="score" style="background-image: url('assets/top-score-bg.png');">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xxl-6 flex align-items-center justify-content-center">
+            <h1 class="text-title">TOP SCORES</h1><br>
+            <p>This top score from various games provided on this platform</p><br>
+            <button type="button" class="btn btn-warning btn-lg ply-now">see more</button>
+          </div>
+          <div class="col-xxl-6">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+<footer id="contact">
+
+</footer>
+</html>
