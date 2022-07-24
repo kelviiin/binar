@@ -80,3 +80,18 @@ ul li::before {
     color: #ccc;
     padding: 12%;
 }
+.card-position{
+    /* position: absolute; */
+    padding: 25px;
+}
+.card-position.end{
+    padding-top: 20vh;
+    padding-left: 15vh;
+}
+.card-position.start{
+    padding-left: 15vh;
+}
+
+.card-body{
+    padding: 20px;
+}
