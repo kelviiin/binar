@@ -112,4 +112,85 @@ ul li::before {
 
 .newsletter{
     padding: 18vh 10vh 0vh 10vh;
+}.background{
+    background: #9C835F;
+}
+.title{
+font-family: 'Open Sans';
+font-style: normal;
+color: #F9B23D;
+font-size: 4vh;
+}
+
+.back-button{
+font-family: 'Open Sans';
+font-weight: 700;
+font-style: normal;
+color: #724C21;
+font-size: 4vh;
+letter-spacing: 0.1em;
+    
+}
+
+.text{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+line-height: 49px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #000000;
+font-size: 3vh;
+}
+.img{
+max-width: 9vh;
+max-height: 10vh;
+border-radius: 30px;
+background-size: cover;
+}
+
+.padding{
+    padding-top: 10vh;
+}
+.vs{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #BD0000;
+    font-size: 10vh;
+}
+
+.win{
+    background: #4C9654;
+    border-radius: 10px;
+    transform: rotate(-28.87deg);
+}
+.draw{
+    background: #035B0C;;
+    border-radius: 10px;
+    transform: rotate(-28.87deg);
+}
+.scissor-player,.rock-player,.paper-player,.refresh{
+    background: none;
+    border: none;
+    border-radius: 0px;
+    width: 12vh;
+    height: 12vh;
+}
+
+.scissor-com,.rock-com,.paper-com{
+    background: none;
+    border: none;
+    border-radius: 0px;
+    width: 12vh;
+    height: 12vh;
+}
+
+.logo{
+    width: 5vh;
+    height: 5vh;
 }
