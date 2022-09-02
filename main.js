@@ -1,3 +1,4 @@
+
 class Player{
     constructor(props){
         let{rock,paper,scissor}=props;
@@ -87,10 +88,10 @@ class Result extends Match(Computer){
 
 clickPlay = () => {
     console.log("masuk");
-    document.location.href="play.html";
+    document.location.href="play";
 }
 clickBack = () => {
-    document.location.href="index.html";
+    document.location.href="";
 }
 
 const player_1 = new Player({
@@ -161,3 +162,5 @@ console.log("reload...");
 reload.addEventListener('click',function(){
     window.location.reload();
 })
+
+// module.exports = router;
