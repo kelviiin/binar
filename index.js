@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const user = require('./user'); 
+const create = require('./create');
+const view = require('./view');
 const currentUser = require('./login.json');
 app.use(express.json());
 app.use(express.static(__dirname));
@@ -16,7 +18,8 @@ app.use((err,req,res,next) => {
         message:"server error"
     })
 });
-
+app.use(create);
+app.use(view);
 app.use(logger);
 app.use(user.router);
 app.set("view engine","ejs")
