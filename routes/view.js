@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { user_game } = require('./models');
+const { user_game } = require('../models');
 
 
 router.use(express.json());

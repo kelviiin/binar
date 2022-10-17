@@ -1,0 +1,65 @@
+create room
+authorization header jwt
+request body
+{
+    "name":"nama room"
+}
+result
+{
+    "id":1,
+    "nama":"nama room"
+}
+
+table rooms, columns:
+-id int
+-name string
+-player_1_id int
+-player_2_id int
+-player_1_hands array
+-player_2_hands array
+-result array
+
+flow implementas create room:
+- user 1 request create room authorization
+- create recor di DB, name:A,player_1_id: 1
+- yang create otomatis jadi player 1
+
+6. fight
+post/rooms/:id/fight
+request header authorization jwt
+request body
+{
+    "hand":"rock/paper/scissor"
+}
+response body{
+    ""
+}
+
+flow implementasi:
+- user 1 request fight di room 1, hand rock
+- get data di table rooms,room ada atau ga? Room.findByPk(1)
+    - kalau ga ada if(!room) return error 404
+    - else ke step selanjutnya
+- cek data dari room, udah ada player 1 dan 2 nya atau belum? user 1 termasuk 1/2
+    - kalau user beda dari yang di DB, return error 400
+    - kalau player 1 udh ada masuk ke player 2
+- simpan data hand sesuai dengan player yang bersangkutan kalau handd < 3
+    - kalau hand di db saat get == 3 return 400
+- return status:
+    -   kalau hand kedua player sudah 3
+        status:fight selesai, silahkan cek hasil
+    -kalau hand player yang request fight udh 3 tapi kawannya belum:
+        status:waiting for opponent turn
+    - kalau hand player yang request fight belum 3
+        status:"silahkan bertumbuk lagi"
+    
+
+get result
+{
+    "results":["player 2 win","draw","tie]
+}
+get/rooms/:id/result
+-get data dari table room berdasarkan id yang ikirim
+- cek apakah result suah ada    
+    - belum: calculate result, save result di DB, return result
+    - sudah: return result langsung
